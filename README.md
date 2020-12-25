@@ -8,6 +8,7 @@ I used next frameworks:
 * [REST Assured](https://github.com/rest-assured/rest-assured)
 * [Allure](https://github.com/allure-framework/allure-java)
 * [Lombok](https://projectlombok.org/)
+* [Config](https://github.com/lightbend/config)
 
 ### Run
 For run tests use the command:

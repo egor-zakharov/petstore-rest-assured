@@ -20,22 +20,21 @@ ext {
     restAssuredVersion = "4.3.1"
     slf4jVersion = "1.6.1"
     aspectjVersion = "1.9.6"
-    assertjVersion = "3.16.1"
-    lombokVersion="1.18.10"
+    lombokVersion = "1.18.10"
+    configVersion = "1.4.1"
 }
 
 dependencies {
     implementation "io.rest-assured:rest-assured:${restAssuredVersion}"
     implementation "io.qameta.allure:allure-rest-assured:${allureVersion}"
-    implementation "org.assertj:assertj-core:${assertjVersion}"
     implementation "org.projectlombok:lombok:${lombokVersion}"
+    implementation "com.typesafe:config:${configVersion}"
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 
 
     testImplementation "org.slf4j:slf4j-simple:${slf4jVersion}"
     testImplementation "org.aspectj:aspectjweaver:${aspectjVersion}"
     testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
-    //testImplementation "org.junit.jupiter:junit-jupiter-params:${junitVersion}"
     testImplementation "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
     testImplementation "io.qameta.allure:allure-junit5:${allureVersion}"
 }
